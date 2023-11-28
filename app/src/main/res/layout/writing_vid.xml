@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="372dp"
+        android:layout_height="479dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/historybg">
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="79dp"
+            android:layout_height="73dp"
+            android:layout_below="@id/fl"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/backarm" />
+
+        <ImageButton
+            android:id="@+id/replay"
+            android:layout_width="79dp"
+            android:layout_height="73dp"
+            android:layout_below="@id/fl"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/new_game" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6"
+    tools:context=".easyMatch">
+
+
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/roundcorner3" />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="92dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/backswing2" />
+
+    <ImageView
+        android:layout_width="276dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/backbutton"
+        android:background="@drawable/easy" />
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="524dp"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundcorner"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/TimeTextView"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:background="#f1c89a"
+            android:padding="10dp"
+            android:text="10s"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:background="#f1c89a"
+            android:padding="10dp"
+            android:text="Timer :"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <include
+            android:id="@+id/easy"
+            layout="@layout/easy"
+            android:layout_width="358dp"
+            android:layout_height="373dp"
+            android:layout_below="@+id/TimeTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

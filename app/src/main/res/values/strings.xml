@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Baybayingame</string>
+    <string name="historyContent"><b>Baybayin </b>The Philippines\' ancient Baybayin script has a long history. Its genesis is said to have been in the thirteenth century, \n
+        and it was used by a number of indigenous cultures to write Tagalog and other Philippine languages. Baybayin, which uses 17 characters \n
+        to indicate syllables, was used for writing down information, keeping track of events, and expressing one\'s creativity. However, the introduction \n
+        of the Latin alphabet during the Spanish colonization in the 16th century caused the Baybayin to gradually disappear. The cultural value of the script \n
+        was attempted to be preserved despite its declining usage. As Filipinos rediscover and celebrate their language and cultural history, Baybayin is currently \n
+        seeing a renaissance. It acts as a marker of national identity and a reminder of the numerous customs that have molded Philippine culture throughout the course of history.
+    </string>
+
+    <string name="patinig">Ang mga patinig i at e at ang mga
+        patinig na u at o ay may parehong
+        karakter na may isang pangatnig,
+        ang mga patinig ay kinakatawan
+        ng palatuldikan simbol. Ang
+        palatuldikan na simbolo ay
+        nagsasabi sa isang mambabasa
+        kung paano bigkasin ang mga salita.</string>
+
+    <string name="correct_answer">Tama ang iyong sagot MAGALING!!</string>
+
+    <string name="wrong_answer">Pasensya at mali ang iyong sagot :( </string>
+
+    <string name="bago">Bago isulat o isalin ang salita sa
+        baybay kailangang kunin
+        ang pantig nito. halimbawa:</string>
+
+    <string name="paalala">At kung ingles ang isasalin sa
+        baybayin kailangang isalin muna ito
+        sa tagalog at tsaka kunin at pantig
+        bago ito isalin sa baybayin.</string>
+
+
+    <string name="title_activity_pick">pick</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="back">Back</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

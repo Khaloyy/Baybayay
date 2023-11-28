@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6"
+    tools:context=".mcLevel">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/roundcorner3" />
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundcorner"
+        android:layout_below="@id/header">
+
+        <ImageButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#00FFFFFF"
+            android:padding="30dp"
+            app:srcCompat="@drawable/easy" />
+
+        <ImageButton
+            android:id="@+id/adeq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/easy"
+            android:layout_centerHorizontal="true"
+            android:background="#00FFFFFF"
+            android:padding="30dp"
+            app:srcCompat="@drawable/adeq" />
+
+
+        <ImageButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adeq"
+            android:layout_centerHorizontal="true"
+            android:background="#00FFFFFF"
+            android:padding="30dp"
+            app:srcCompat="@drawable/hard" />
+
+
+    </RelativeLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="93dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/backswing2" />
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="295dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/backbutton"
+        android:background="@drawable/pagtutugmatxt" />
+</RelativeLayout>

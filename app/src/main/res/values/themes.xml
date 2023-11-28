@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Baybayingame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#006200EE</item>
+        <item name="colorPrimaryVariant">#003700B3</item>
+        <item name="colorOnPrimary">#00FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0003DAC5</item>
+        <item name="colorSecondaryVariant">#00018786</item>
+        <item name="colorOnSecondary">#00000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Baybayingame.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Baybayingame.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Baybayingame.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme.PopMe"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:background="@drawable/historybg">
+
+        <ImageView
+            android:id="@+id/HistoryHeader"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="117dp"
+            android:layout_toEndOf="@+id/back"
+            android:background="@drawable/history1" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="54dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/back"
+            android:contentDescription="@string/back"
+            android:padding="40dp" />
+
+        <ScrollView
+            android:layout_width="208dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/HistoryHeader"
+            android:layout_centerHorizontal="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/historyContent"
+                    android:layout_width="251dp"
+                    android:layout_height="560dp"
+                    android:padding="10dp"
+
+                    android:text="@string/historyContent"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
