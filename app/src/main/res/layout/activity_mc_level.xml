@@ -29,47 +29,67 @@
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@id/backbutton"
         android:background="@drawable/pagtutugmatxt" />
-    <RelativeLayout
-        android:layout_width="327dp"
-        android:layout_height="440dp"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
+
+    <LinearLayout
+        android:id="@+id/choices"
+        android:layout_width="315dp"
+        android:layout_height="257dp"
+        android:layout_below="@id/header"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
         android:background="@drawable/roundcorner"
-        android:layout_below="@id/header">
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/easy"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/madali"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="#00FFFFFF"
-            android:padding="30dp"
-            app:srcCompat="@drawable/easy" />
+            android:layout_margin="20dp"
+            android:backgroundTint="#FFF0DB"
+            android:text="madali"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />
 
-        <ImageButton
-            android:id="@+id/adeq"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/katamtaman"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/easy"
-            android:layout_centerHorizontal="true"
-            android:background="#00FFFFFF"
-            android:padding="30dp"
-            app:srcCompat="@drawable/adeq" />
+            android:layout_margin="20dp"
+            android:backgroundTint="#FFF0DB"
+            android:fontFamily="@font/aclonica"
+            android:text="katamtaman"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />
 
-
-        <ImageButton
-            android:id="@+id/hard"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/mahirap"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/adeq"
-            android:layout_centerHorizontal="true"
-            android:background="#00FFFFFF"
-            android:padding="30dp"
-            app:srcCompat="@drawable/hard" />
+            android:layout_margin="20dp"
+            android:backgroundTint="#FFF0DB"
+            android:fontFamily="@font/aclonica"
+            android:text="mahirap"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />
 
 
-    </RelativeLayout>
 
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Tara"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choices"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#C2A472"
+        android:fontFamily="@font/aclonica"
+        android:text="Tara"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp" />
 
 
 

@@ -84,34 +84,37 @@ public class adeqMatch extends AppCompatActivity {
             @Override
             public void onFinish() {
                 //DNF pop up
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(adeqMatch.this);
-                alertDialog
-                        .setMessage("Did not Finish..Time is up!!")
-                        .setCancelable(false)
-                        .setPositiveButton("New", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intent = new Intent(getApplicationContext(), adeqMatch.class);
-                                startActivity(intent);
-                                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-                                finish();
-                                shutdown();
-                                countDownTimer.start();//restart the countdown timer
-                            }
-                        })
-                        .setNegativeButton("Exit", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                Intent intentLoadPlayActivity = new Intent(adeqMatch.this, mcLevel.class);
-                                startActivity(intentLoadPlayActivity);
-                                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-                                shutdown();
-                                finish();
-                            }
-                        });
+                View alertCustomDialog = LayoutInflater.from(adeqMatch.this).inflate(R.layout.dnf, null);
 
-                AlertDialog ad = alertDialog.create();
-                ad.show();
+                AlertDialog.Builder builder = new AlertDialog.Builder(adeqMatch.this);
+                builder.setCancelable(false);
+                builder.setView(alertCustomDialog);
+
+
+                ImageButton go_back = alertCustomDialog.findViewById(R.id.exit);
+                ImageButton restart = alertCustomDialog.findViewById(R.id.restart);
+
+
+                AlertDialog alertDialog = builder.create();
+
+                alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                alertDialog.getWindow().getAttributes().windowAnimations = R.anim.scale_up;
+
+                // show your alert dialog
+                alertDialog.show();
+
+                restart.setOnClickListener(view -> {
+                    Intent intent = new Intent(getApplicationContext(), easyMatch.class);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                    finish();
+                    shutdown();
+                } );
+
+                go_back.setOnClickListener(v -> {
+                    alertDialog.dismiss();
+
+                });
             }
         }.start();
 
@@ -439,8 +442,8 @@ public class adeqMatch extends AppCompatActivity {
         builder.setCancelable(false);
         builder.setView(alertCustomDialog);
 
-        ImageButton newGame = alertCustomDialog.findViewById(R.id.Green_BT);
-        ImageButton exit = alertCustomDialog.findViewById(R.id.Red_BT);
+        ImageButton newGame = alertCustomDialog.findViewById(R.id.restart);
+        ImageButton exit = alertCustomDialog.findViewById(R.id.exit);
 
         AlertDialog alertDialog = builder.create();
 

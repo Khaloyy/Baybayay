@@ -5,15 +5,24 @@
     android:layout_height="match_parent"
     android:padding="10dp">
 
-    <ImageView
-        android:id="@+id/ivheader"
-        android:layout_width="300dp"
-        android:layout_height="220dp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/dialog_bg"/>
 
     <ImageView
+        android:id="@+id/ivheader"
+        android:layout_width="316dp"
+        android:layout_height="237dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundcorner3" />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundcorner"/>
+
+
+    <ImageView
+        android:id="@+id/head"
         android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -26,8 +35,9 @@
         android:layout_height="55dp"
         android:layout_alignEnd="@+id/ivheader"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="160dp"
+        android:layout_below="@id/head"
         android:layout_marginEnd="63dp"
+        android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/exit"
         android:background="@drawable/new_game" />
 
@@ -37,7 +47,8 @@
         android:layout_height="51dp"
         android:layout_alignStart="@+id/ivheader"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/head"
         android:background="@drawable/arrow"
         android:scaleType="center" />
 
