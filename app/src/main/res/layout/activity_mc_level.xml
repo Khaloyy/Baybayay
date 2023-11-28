@@ -11,9 +11,24 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="216dp"
-        android:layout_marginTop="-60dp"
+        android:layout_marginTop="-90dp"
         android:background="@drawable/roundcorner3" />
 
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="93dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/backswing2" />
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="295dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/backbutton"
+        android:background="@drawable/pagtutugmatxt" />
     <RelativeLayout
         android:layout_width="327dp"
         android:layout_height="440dp"
@@ -57,19 +72,5 @@
 
 
 
-    <ImageButton
-        android:id="@+id/backbutton"
-        android:layout_width="93dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/backswing2" />
 
-    <ImageView
-        android:id="@+id/head"
-        android:layout_width="295dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/backbutton"
-        android:background="@drawable/pagtutugmatxt" />
 </RelativeLayout>

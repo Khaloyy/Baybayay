@@ -12,20 +12,20 @@
         android:id="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="216dp"
-        android:layout_marginTop="-60dp"
+        android:layout_marginTop="-90dp"
         android:background="@drawable/roundcorner3" />
     <ImageButton
         android:id="@+id/backbutton"
         android:layout_width="92dp"
         android:layout_height="73dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/backswing2" />
 
     <ImageView
 
         android:layout_width="267dp"
         android:layout_height="105dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/backbutton"
