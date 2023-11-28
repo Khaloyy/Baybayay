@@ -47,6 +47,8 @@
             android:layout_height="520dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:background="@drawable/roundcorner"
             android:gravity="center">
 
             <TextView
@@ -193,10 +195,11 @@
 
             <include
                 layout="@layout/katinig_layout"
-                android:layout_width="330dp"
-                android:layout_height="800dp"
+                android:layout_width="279dp"
+                android:layout_height="750dp"
                 android:layout_below="@id/katinig"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-7dp" />
 
         </RelativeLayout>
     </ScrollView>
