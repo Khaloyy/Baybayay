@@ -17,10 +17,11 @@
 
     <ImageButton
         android:id="@+id/backbutton"
-        android:layout_width="92dp"
-        android:layout_height="73dp"
+        android:layout_width="78dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/backswing2" />
+        android:background="@drawable/undo" />
 
     <ImageView
         android:layout_width="276dp"
@@ -29,7 +30,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/backbutton"
-        android:background="@drawable/adeq" />
+        android:background="@drawable/katamtaman" />
 
     <RelativeLayout
         android:layout_width="342dp"

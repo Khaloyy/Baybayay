@@ -21,10 +21,10 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="82dp"
-        android:layout_height="67dp"
-        android:layout_marginLeft="40dp"
+        android:layout_width="57dp"
+        android:layout_height="54dp"
         android:layout_below="@id/icon"
-        android:background="@drawable/backswing2" />
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/undo" />
 
 </RelativeLayout>

@@ -55,7 +55,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         bah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.bgdown);
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ba);
                 showVideoPlayerAlertDialog(uri);
 
             }
@@ -63,78 +63,104 @@ public class PagsulatAcitivty extends AppCompatActivity {
         kah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ka);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         dah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.da);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         gah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ga);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         hah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ha);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         lah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ba);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         mah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ma);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         nah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.na);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         ngah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.nga);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         pah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pa);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         sah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.sa);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         tah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ta);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         wah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.wa);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         yah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ya);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
@@ -143,12 +169,16 @@ public class PagsulatAcitivty extends AppCompatActivity {
         ah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.a);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });
         eh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ei);
+                showVideoPlayerAlertDialog(uri);
 
 
             }
@@ -156,6 +186,8 @@ public class PagsulatAcitivty extends AppCompatActivity {
         oh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ou);
+                showVideoPlayerAlertDialog(uri);
 
             }
         });

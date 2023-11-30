@@ -13,24 +13,24 @@
 
         <ImageView
             android:id="@+id/HistoryHeader"
-            android:layout_width="140dp"
+            android:layout_width="127dp"
             android:layout_height="60dp"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="17dp"
             android:layout_marginTop="70dp"
-            android:layout_marginEnd="117dp"
+            android:layout_marginEnd="124dp"
             android:layout_toEndOf="@+id/back"
             android:background="@drawable/history1" />
 
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="54dp"
-            android:layout_height="58dp"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="65dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="70dp"
-            android:background="@drawable/backswing2"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/undo"
             android:contentDescription="@string/back"
             android:padding="40dp" />
 

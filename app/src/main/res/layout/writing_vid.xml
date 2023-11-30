@@ -20,27 +20,30 @@
 
             <VideoView
                 android:id="@+id/videoView"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
+
 
         </FrameLayout>
 
         <ImageButton
             android:id="@+id/back"
-            android:layout_width="79dp"
-            android:layout_height="73dp"
+            android:layout_width="61dp"
+            android:layout_height="52dp"
             android:layout_below="@id/fl"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="70dp"
-            android:background="@drawable/backarm" />
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/undo" />
 
         <ImageButton
             android:id="@+id/replay"
-            android:layout_width="79dp"
-            android:layout_height="73dp"
+            android:layout_width="65dp"
+            android:layout_height="57dp"
             android:layout_below="@id/fl"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="220dp"
+            android:layout_marginTop="26dp"
             android:background="@drawable/new_game" />
 
     </RelativeLayout>
