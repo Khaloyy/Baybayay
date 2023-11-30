@@ -6,8 +6,8 @@
 
     <include
         layout="@layout/katinig"
-        android:layout_width="274dp"
-        android:layout_height="689dp"
+        android:layout_width="314dp"
+        android:layout_height="675dp"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="-2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

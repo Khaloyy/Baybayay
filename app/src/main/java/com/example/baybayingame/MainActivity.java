@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
@@ -110,33 +111,8 @@ public class MainActivity extends AppCompatActivity {
            //to verify quit
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
-                alertDialog
-                        .setMessage("Do you Really Want to Quit?")
-                        .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                finish();
-                                System.exit(1);
-
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-
-
-                                AlertDialog ad = alertDialog.create();
-                                ad.dismiss();
-                            }
-                        });
-
-                AlertDialog ad = alertDialog.create();
-                ad.show();
-
-
-
+                String txtview = "Patuloy sa Pag Alis ?";
+                popconfirm(txtview);
 
             }
         });
@@ -171,6 +147,43 @@ public class MainActivity extends AppCompatActivity {
 
     });
 
+    }
+
+    private void popconfirm(String txt){
+        View alertCustomDialog = LayoutInflater.from(MainActivity.this).inflate(R.layout.confirmation, null);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setCancelable(false);
+        builder.setView(alertCustomDialog);
+
+
+
+        TextView txtview = alertCustomDialog.findViewById(R.id.head);
+        ImageButton no = alertCustomDialog.findViewById(R.id.no);
+        ImageButton yes = alertCustomDialog.findViewById(R.id.yes);
+
+
+        txtview.setText(txt);
+
+        AlertDialog alertDialog = builder.create();
+
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        alertDialog.getWindow().getAttributes().windowAnimations = R.anim.scale_up;
+
+        // show your alert dialog
+        alertDialog.show();
+
+        yes.setOnClickListener(v -> {
+            System.exit(1);
+
+
+
+        });
+
+        no.setOnClickListener(v -> {
+            alertDialog.dismiss();
+
+        });
     }
 
 

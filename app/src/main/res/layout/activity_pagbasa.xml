@@ -196,11 +196,11 @@
 
             <include
                 layout="@layout/katinig_layout"
-                android:layout_width="279dp"
-                android:layout_height="750dp"
+                android:layout_width="308dp"
+                android:layout_height="736dp"
                 android:layout_below="@id/katinig"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="-7dp" />
+                 />
 
         </RelativeLayout>
     </ScrollView>

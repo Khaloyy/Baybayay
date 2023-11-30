@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:backgroundTint="#FFF0DB"
+            android:backgroundTint="#93EF36"
             android:text="madali"
             android:fontFamily="@font/aclonica"
             android:textColor="@color/black"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:backgroundTint="#FFF0DB"
+            android:backgroundTint="#EF9336 "
             android:fontFamily="@font/aclonica"
             android:text="katamtaman"
             android:textColor="@color/black"
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:backgroundTint="#FFF0DB"
+            android:backgroundTint="#EF3636"
             android:fontFamily="@font/aclonica"
             android:text="mahirap"
             android:textColor="@color/black"
@@ -78,18 +78,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/Tara"
-        android:layout_width="186dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/choices"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="20dp"
-        android:backgroundTint="#C2A472"
-        android:fontFamily="@font/aclonica"
-        android:text="Tara"
-        android:textColor="@color/black"
-        app:cornerRadius="10dp" />
 
 
 
