@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="#FAF9F6"
     tools:context=".PilianActivity">
 
     <ImageView
@@ -17,18 +17,18 @@
 
     <ImageButton
         android:id="@+id/backbutton"
-        android:layout_width="102dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="20dp"
+        android:layout_width="78dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/backswing2"
+        android:background="@drawable/undo"
         android:padding="10dp" />
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="84dp"
-        android:layout_marginLeft="30dp"
+        android:layout_width="168dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/backbutton"
         android:background="@drawable/roundcorner"

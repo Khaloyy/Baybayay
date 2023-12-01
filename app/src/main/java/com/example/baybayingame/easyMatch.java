@@ -86,12 +86,11 @@ public class easyMatch extends AppCompatActivity {
             @Override
             public void onFinish() {
                 Toast.makeText(easyMatch.this, "Hindi mo natapos ", Toast.LENGTH_SHORT).show();
-
                 Intent intentLoadPlayActivity = new Intent(easyMatch.this, mcLevel.class);
                 startActivity(intentLoadPlayActivity);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 finish();
-                shutdown();
+
 
             }
 
@@ -107,13 +106,10 @@ public class easyMatch extends AppCompatActivity {
         Collections.shuffle(Arrays.asList(cardsArray));
 
 
-        iv1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int theCard = Integer.parseInt((String) view.getTag());
-                doStuff(iv1, theCard);
+        iv1.setOnClickListener(view -> {
+            int theCard = Integer.parseInt((String) view.getTag());
+            doStuff(iv1, theCard);
 
-            }
         });
         iv2.setOnClickListener(new View.OnClickListener() {
             @Override
