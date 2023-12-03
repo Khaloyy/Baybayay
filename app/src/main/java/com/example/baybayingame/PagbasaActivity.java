@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,11 +18,23 @@ public class PagbasaActivity extends AppCompatActivity {
     ImageButton backButton;
     ImageButton ei , a , ou ;
     ImageView ba , ka , da ,ga ,ha,la,ma,na,nga,pa,sa,ta,wa,ya;
+    MediaPlayer bgMusic;
+
+    protected void onPause() {
+        super.onPause();
+        bgMusic.release();
+        finish();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagbasa);
+
+        bgMusic = MediaPlayer.create(PagbasaActivity.this, R.raw.pagbabasa);
+        bgMusic.setLooping(true);
+        bgMusic.start();
 
         a = (ImageButton)findViewById(R.id.a);
         ei = (ImageButton)findViewById(R.id.ei);

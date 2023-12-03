@@ -3,6 +3,7 @@ package com.example.baybayingame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -15,15 +16,27 @@ public class PilianActivity extends AppCompatActivity {
     ImageButton translateButton;
     ImageButton pagsulatbutton;
     ImageButton pagbasaButton;
+    MediaPlayer bgMusic;
         ImageButton backButton;
 
         VideoView videoView;
     private boolean run;
 
+    protected void onPause() {
+        super.onPause();
+        bgMusic.pause();
+        finish();
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picking);
+
+        bgMusic = MediaPlayer.create(PilianActivity.this, R.raw.bgpagtutugma);
+        bgMusic.setLooping(true);
+        bgMusic.start();
 
 
 

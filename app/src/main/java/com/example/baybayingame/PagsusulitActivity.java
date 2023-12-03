@@ -7,7 +7,10 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -27,14 +30,25 @@ public class PagsusulitActivity extends AppCompatActivity implements View.OnClic
     int currentQuestionIndex = 0;
     String selectedAns = "";
     private boolean run;
+    MediaPlayer bgMusic;
 
     int toastMessageId;
+    protected void onPause() {
+        super.onPause();
+        bgMusic.pause();
+        finish();
+
+    }
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagsusulit);
+
+        bgMusic = MediaPlayer.create(PagsusulitActivity.this, R.raw.bgpagsusulit);
+        bgMusic.setLooping(true);
+        bgMusic.start();
 
         TotalQuestions =  findViewById(R.id.totalq);
         questions =  findViewById(R.id.questions);
@@ -117,39 +131,49 @@ public class PagsusulitActivity extends AppCompatActivity implements View.OnClic
             status = "Failed";
         }
 
-       AlertDialog.Builder alertDialog = new androidx.appcompat.app.AlertDialog.Builder(PagsusulitActivity.this);
-        alertDialog
-                .setMessage("Your Score is " + score + " out of " + totalQ)
-                .setCancelable(false)
-                //restart game
-                .setPositiveButton("New", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        score = 0;
-                        currentQuestionIndex = 0;
-                        loadNewQuestion();
-                        
-
-                    }
-                })
-                //exit game
-                .setNegativeButton("Exit", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intentLoadPlayActivity = new Intent(PagsusulitActivity.this, PilianActivity.class);
-                        startActivity(intentLoadPlayActivity);
-                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-                        finish();
-                        shutdown();
-                    }
-                });
-
-        AlertDialog ad = alertDialog.create();
-        ad.show();
+        String txtview =  "Your Score is " + score + " out of " + totalQ ;
+        popconfirm(txtview);
     }
 
     private void shutdown() {
         this.run = false;
+    }
+
+    private void popconfirm(String txt){
+        View alertCustomDialog = LayoutInflater.from(PagsusulitActivity.this).inflate(R.layout.confirmation, null);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(PagsusulitActivity.this);
+        builder.setCancelable(false);
+        builder.setView(alertCustomDialog);
+
+
+
+        TextView txtview = alertCustomDialog.findViewById(R.id.head);
+        ImageButton no = alertCustomDialog.findViewById(R.id.no);
+        ImageButton yes = alertCustomDialog.findViewById(R.id.yes);
+
+
+        txtview.setText(txt);
+
+        AlertDialog alertDialog = builder.create();
+
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        alertDialog.getWindow().getAttributes().windowAnimations = R.anim.scale_up;
+
+        // show your alert dialog
+        alertDialog.show();
+
+        yes.setOnClickListener(v -> {
+            System.exit(1);
+
+
+
+        });
+
+        no.setOnClickListener(v -> {
+            alertDialog.dismiss();
+
+        });
     }
 }
 

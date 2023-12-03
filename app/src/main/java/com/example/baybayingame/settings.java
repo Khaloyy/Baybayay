@@ -58,7 +58,7 @@ public class settings extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
 
         title = (ImageView) findViewById(R.id.sounds);
-        bgMusic = MediaPlayer.create(settings.this, R.raw.bg4);
+        bgMusic = MediaPlayer.create(settings.this, R.raw.pagsasalin);
         bgMusic.setLooping(true); //to loop the bg music
         bgMusic.start();//start the bgmusic
 

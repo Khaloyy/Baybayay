@@ -63,7 +63,6 @@
             android:fontFamily="@font/aclonica"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="10dp"
-            android:background="roundcorner3"
             android:padding="10dp"
             android:text="Timer :"
             android:textAlignment="center"

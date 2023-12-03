@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -40,11 +41,23 @@ public class easyMatch extends AppCompatActivity {
     CountDownTimer countDownTimer;
     ImageButton backButton;
     private boolean run;
+    MediaPlayer bgMusic;
+
+    protected void onPause() {
+        super.onPause();
+        bgMusic.release();
+        finish();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_match);
+
+        bgMusic = MediaPlayer.create(easyMatch.this, R.raw.bgpagtutugma);
+        bgMusic.setLooping(true);
+        bgMusic.start();
 
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv2 = (ImageView) findViewById(R.id.iv2);

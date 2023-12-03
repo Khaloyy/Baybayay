@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         bgMusic.pause();
+        finish();
 
 
     }
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //background music
-        bgMusic = MediaPlayer.create(MainActivity.this, R.raw.bg1);
+        bgMusic = MediaPlayer.create(MainActivity.this, R.raw.mainbgmusic);
         bgMusic.setLooping(true);
         bgMusic.start();
 

@@ -40,7 +40,7 @@ public class PagsasalinActivity extends AppCompatActivity {
 
 
 
-        bgMusic = MediaPlayer.create(PagsasalinActivity.this, R.raw.bg4);
+        bgMusic = MediaPlayer.create(PagsasalinActivity.this, R.raw.pagsasalin);
         bgMusic.setLooping(true);
         bgMusic.start();
 

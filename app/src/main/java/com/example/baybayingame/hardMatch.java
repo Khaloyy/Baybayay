@@ -66,7 +66,7 @@ public class hardMatch extends AppCompatActivity {
 
 
         //bgmusic code
-        bgMusic = MediaPlayer.create(hardMatch.this, R.raw.mt);
+        bgMusic = MediaPlayer.create(hardMatch.this, R.raw.bgpagtutugma);
         bgMusic.setLooping(true);
         bgMusic.start();
 

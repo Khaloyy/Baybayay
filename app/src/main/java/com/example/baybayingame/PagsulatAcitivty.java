@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,14 +22,26 @@ public class PagsulatAcitivty extends AppCompatActivity {
 
     ImageView bah,kah,dah,gah,hah,lah,mah,nah,ngah,pah,sah,tah,wah,yah, ah,eh,oh;
 
+    MediaPlayer bgMusic;
 
 
     private boolean run;
+
+    protected void onPause() {
+        super.onPause();
+        bgMusic.pause();
+        finish();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagsulat);
+
+        bgMusic = MediaPlayer.create(PagsulatAcitivty.this, R.raw.pagsusulat);
+        bgMusic.setLooping(true);
+        bgMusic.start();
 
 
         bah = (ImageView)findViewById(R.id.ba);
