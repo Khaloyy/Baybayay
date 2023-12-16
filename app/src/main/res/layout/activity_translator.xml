@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="@drawable/background"
     tools:context=".PagsasalinActivity">
 
 
     <ImageView
         android:id="@+id/head"
         android:layout_width="match_parent"
+        android:elevation="10dp"
         android:layout_height="216dp"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/roundcorner3" />
+        android:background="@drawable/roundcorner" />
 
     <ImageView
 
         android:layout_width="284dp"
         android:layout_height="92dp"
+        android:elevation="10dp"
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@id/back"
         android:layout_marginTop="30dp"
@@ -29,6 +31,7 @@
         android:id="@+id/back"
         android:layout_width="78dp"
         android:layout_height="69dp"
+        android:elevation="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:layout_weight="1"
@@ -36,18 +39,20 @@
         android:padding="10dp" />
 
     <RelativeLayout
-        android:layout_width="350dp"
-        android:layout_height="433dp"
+        android:layout_width="match_parent"
+        android:layout_height="683dp"
         android:layout_below="@+id/head"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/roundcorner"
+        android:elevation="10dp"
         android:padding="20dp">
 
         <ImageView
             android:id="@+id/baybayinhead"
             android:layout_width="222dp"
             android:layout_height="60dp"
+            android:layout_below="@id/toTranslate"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="11dp"
             android:background="@drawable/baybayin" />
@@ -59,7 +64,8 @@
             android:layout_below="@id/baybayinhead"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="11dp"
-            android:background="@drawable/roundcorner2"
+            android:background="@drawable/roundcorner4"
+            android:elevation="10dp"
             android:fontFamily="@font/matatas_one"
             android:hint="Baybayin"
             android:padding="10dp"
@@ -71,7 +77,6 @@
             android:id="@+id/tagalogHead"
             android:layout_width="170dp"
             android:layout_height="63dp"
-            android:layout_below="@id/translated"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="11dp"
             android:background="@drawable/tagalog" />
@@ -79,13 +84,13 @@
 
         <EditText
             android:id="@+id/toTranslate"
-            android:layout_width="298dp"
-            android:layout_height="85dp"
+            android:layout_width="303dp"
+            android:layout_height="91dp"
             android:layout_below="@id/tagalogHead"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
             android:layout_marginTop="11dp"
-            android:background="@drawable/roundcorner2"
+            android:background="@drawable/roundcorner4"
+            android:elevation="10dp"
             android:ems="18"
             android:hint="Maglagay ng mga salita"
             android:inputType="textVisiblePassword"

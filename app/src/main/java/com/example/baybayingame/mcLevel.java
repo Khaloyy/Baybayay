@@ -81,6 +81,7 @@ public class mcLevel extends AppCompatActivity implements View.OnClickListener {
                 Intent intentLoadMatchingActivity = new Intent(mcLevel.this, easyMatch.class);
                 startActivity(intentLoadMatchingActivity);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                alertDialog.dismiss();
                 finish();
                 shutdown();
 
@@ -120,6 +121,7 @@ public class mcLevel extends AppCompatActivity implements View.OnClickListener {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 shutdown();
+                alertDialog.dismiss();
 
 
             });
@@ -155,6 +157,7 @@ public class mcLevel extends AppCompatActivity implements View.OnClickListener {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 finish();
                 shutdown();
+                alertDialog.dismiss();
 
 
 

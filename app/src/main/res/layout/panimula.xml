@@ -20,7 +20,7 @@
             android:layout_marginTop="80dp"
             android:layout_marginEnd="89dp"
             android:layout_toEndOf="@+id/back"
-            android:background="@drawable/panimula" />
+            android:background="@drawable/kasaysayan" />
 
         <ImageButton
             android:id="@+id/back"
@@ -39,7 +39,7 @@
             android:layout_height="191dp"
             android:layout_below="@id/HistoryHeader"
             android:layout_centerHorizontal="true"
-
+            android:background="@drawable/roundcorner2"
             android:padding="10dp"
             android:scrollbars="none">
 

@@ -59,6 +59,7 @@ public class adeqMatch extends AppCompatActivity {
         bgMusic = MediaPlayer.create(adeqMatch.this, R.raw.bgpagtutugma);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv2 = (ImageView) findViewById(R.id.iv2);
@@ -105,6 +106,7 @@ public class adeqMatch extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 finish();
                 shutdown();
+                countDownTimer.cancel();
             }
         }.start();
 
@@ -114,6 +116,7 @@ public class adeqMatch extends AppCompatActivity {
                 Intent intentLoadPlayActivity = new Intent(adeqMatch.this, mcLevel.class);
                 startActivity(intentLoadPlayActivity);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                countDownTimer.cancel();
                 finish();
                 shutdown();
 
@@ -449,6 +452,7 @@ public class adeqMatch extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             shutdown();
             finish();
+            alertDialog.dismiss();
         });
 
         exit.setOnClickListener(v -> {
@@ -457,6 +461,7 @@ public class adeqMatch extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
             shutdown();
             finish();
+            alertDialog.dismiss();
 
         });
 

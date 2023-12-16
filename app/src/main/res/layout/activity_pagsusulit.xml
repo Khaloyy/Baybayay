@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="@drawable/background"
     tools:context=".PagsusulitActivity">
 
 
     <ImageView
         android:id="@+id/head"
         android:layout_width="match_parent"
+        android:elevation="10dp"
         android:layout_height="216dp"
         android:layout_marginTop="-90dp"
         android:background="@drawable/roundcorner3" />
     <ImageButton
         android:id="@+id/back"
         android:layout_width="78dp"
+        android:elevation="10dp"
         android:layout_height="69dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
@@ -26,6 +28,7 @@
 
         android:layout_width="267dp"
         android:layout_height="105dp"
+        android:elevation="10dp"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
@@ -33,12 +36,13 @@
         android:background="@drawable/pagsusulittxt" />
 
     <RelativeLayout
-        android:layout_width="335dp"
-        android:layout_height="521dp"
+        android:layout_width="match_parent"
+        android:layout_height="688dp"
         android:layout_below="@+id/head"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/roundcorner"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundcorner5"
+        android:elevation="10dp"
         android:padding="10dp">
 
         <TextView
@@ -46,9 +50,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textAlignment="center"
             android:gravity="center"
             android:text=" "
+            android:textAlignment="center"
             android:textColor="#333333"
             android:textSize="15dp" />
 
@@ -59,7 +63,7 @@
             android:layout_below="@id/totalq"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="What is the translation for this?"
+            android:text="Ano ang ibig sabihin nito ?"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24dp" />
@@ -92,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:backgroundTint="#C2A472"
+                android:backgroundTint="#f7edde"
                 android:text="Ans A"
                 android:textColor="@color/black"
                 app:cornerRadius="10dp" />
@@ -102,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:backgroundTint="#C2A472"
+                android:backgroundTint="#f7edde"
                 android:text="Ans B"
                 android:textColor="@color/black"
                 app:cornerRadius="10dp" />
@@ -112,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:backgroundTint="#C2A472"
+                android:backgroundTint="#f7edde"
                 android:text="Ans C"
                 android:textColor="@color/black"
                 app:cornerRadius="10dp" />
@@ -122,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:backgroundTint="#C2A472"
+                android:backgroundTint="#f7edde"
                 android:text="Ans D"
                 android:textColor="@color/black"
                 app:cornerRadius="10dp" />
@@ -133,8 +137,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/choices"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="#E3AB6D"
-                android:text="Submit"
+                android:backgroundTint="#907564"
+                android:textColor="@color/black"
+                android:text="Ipasa"
                 app:cornerRadius="10dp" />
 
 
@@ -142,10 +147,6 @@
 
 
     </RelativeLayout>
-
-
-
-
 
 
 </RelativeLayout>

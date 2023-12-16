@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="@drawable/background"
     tools:context=".mcLevel">
 
     <ImageView
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="216dp"
+        android:elevation="3dp"
         android:layout_marginTop="-90dp"
         android:background="@drawable/roundcorner3" />
 
     <ImageButton
         android:id="@+id/backbutton"
         android:layout_width="78dp"
+        android:elevation="5dp"
         android:layout_height="69dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
@@ -26,6 +28,7 @@
         android:id="@+id/head"
         android:layout_width="295dp"
         android:layout_height="107dp"
+        android:elevation="5dp"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@id/backbutton"
@@ -35,10 +38,11 @@
         android:id="@+id/choices"
         android:layout_width="315dp"
         android:layout_height="257dp"
+        android:elevation="20dp"
         android:layout_below="@id/header"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
-        android:background="@drawable/roundcorner"
+        android:background="@drawable/roundcorner5"
         android:orientation="vertical">
 
         <Button
@@ -46,9 +50,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:backgroundTint="#93EF36"
-            android:text="madali"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="50dp"
+            android:backgroundTint="#77DD77"
             android:fontFamily="@font/aclonica"
+            android:text="madali"
             android:textColor="@color/black"
             app:cornerRadius="10dp" />
 
@@ -57,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:backgroundTint="#EF9336 "
+            android:backgroundTint="#ff964f "
             android:fontFamily="@font/aclonica"
             android:text="katamtaman"
             android:textColor="@color/black"
@@ -67,8 +76,9 @@
             android:id="@+id/mahirap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_margin="20dp"
-            android:backgroundTint="#EF3636"
+            android:backgroundTint="#ff6961"
             android:fontFamily="@font/aclonica"
             android:text="mahirap"
             android:textColor="@color/black"

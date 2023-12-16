@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="@drawable/background"
     tools:context=".PagsulatAcitivty">
 
     <ImageView
         android:id="@+id/head"
         android:layout_width="match_parent"
+        android:elevation="10dp"
         android:layout_height="216dp"
         android:layout_marginTop="-90dp"
         android:background="@drawable/roundcorner3" />
@@ -17,8 +18,10 @@
     <ImageView
         android:id="@+id/pagbasa"
         android:layout_width="259dp"
+        android:elevation="10dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@id/backbutton"
         android:background="@drawable/pagsulattxt" />
 
@@ -27,19 +30,22 @@
         android:id="@+id/backbutton"
         android:layout_width="78dp"
         android:layout_height="69dp"
+        android:elevation="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/undo"
         android:padding="10dp" />
 
     <RelativeLayout
-        android:layout_width="336dp"
-        android:layout_height="520dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
         android:layout_below="@id/head"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/roundcorner"
-        android:gravity="center">
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundcorner5"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/patinig"
@@ -107,9 +113,11 @@
 
                 <include
                     layout="@layout/katinig_layout"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp" />
 
             </RelativeLayout>
 

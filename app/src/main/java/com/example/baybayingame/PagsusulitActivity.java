@@ -49,6 +49,7 @@ public class PagsusulitActivity extends AppCompatActivity implements View.OnClic
         bgMusic = MediaPlayer.create(PagsusulitActivity.this, R.raw.bgpagsusulit);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
         TotalQuestions =  findViewById(R.id.totalq);
         questions =  findViewById(R.id.questions);
@@ -82,10 +83,10 @@ public class PagsusulitActivity extends AppCompatActivity implements View.OnClic
 
     @Override
     public void onClick(View view) {
-        ansa.setBackgroundColor(Color.parseColor("#C2A472"));
-        ansb.setBackgroundColor(Color.parseColor("#C2A472"));
-        ansc.setBackgroundColor(Color.parseColor("#C2A472"));
-        ansd.setBackgroundColor(Color.parseColor("#C2A472"));
+        ansa.setBackgroundColor(Color.parseColor("#f7edde"));
+        ansb.setBackgroundColor(Color.parseColor("#f7edde"));
+        ansc.setBackgroundColor(Color.parseColor("#f7edde"));
+        ansd.setBackgroundColor(Color.parseColor("#f7edde"));
 
         Button clicked = (Button)view;
 
@@ -164,14 +165,21 @@ public class PagsusulitActivity extends AppCompatActivity implements View.OnClic
         alertDialog.show();
 
         yes.setOnClickListener(v -> {
-            System.exit(1);
+            Intent intentLoadTranslateActivity = new Intent(PagsusulitActivity.this , PagsusulitActivity.class);
+            startActivity(intentLoadTranslateActivity);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            finish();
+            shutdown();
 
 
 
         });
 
         no.setOnClickListener(v -> {
-            alertDialog.dismiss();
+            Intent intentLoadMatchingActivity = new Intent(PagsusulitActivity.this , PilianActivity.class);
+            startActivity(intentLoadMatchingActivity);
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            finish();
 
         });
     }

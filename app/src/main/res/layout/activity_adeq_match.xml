@@ -5,12 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="@drawable/background"
     tools:context=".adeqMatch">
 
     <ImageView
         android:id="@+id/head"
         android:layout_width="match_parent"
+        android:elevation="10dp"
         android:layout_height="216dp"
         android:layout_marginTop="-90dp"
         android:background="@drawable/roundcorner3" />
@@ -19,6 +20,7 @@
         android:id="@+id/backbutton"
         android:layout_width="78dp"
         android:layout_height="69dp"
+        android:elevation="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/undo" />
@@ -26,6 +28,7 @@
     <ImageView
         android:layout_width="276dp"
         android:layout_height="80dp"
+        android:elevation="10dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
@@ -35,20 +38,22 @@
     <RelativeLayout
         android:layout_width="342dp"
         android:layout_height="522dp"
+        android:elevation="10dp"
         android:layout_below="@id/head"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/roundcorner"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundcorner5"
         android:padding="20dp">
 
         <TextView
             android:id="@+id/TimeTextView"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
+            android:elevation="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="8dp"
             android:layout_toRightOf="@id/textView2"
-            android:background="@drawable/roundcorner3"
+            android:background="@drawable/roundcorner4"
             android:padding="10dp"
             android:text="10s"
             android:textAlignment="center"

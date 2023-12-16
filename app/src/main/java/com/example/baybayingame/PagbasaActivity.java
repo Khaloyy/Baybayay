@@ -35,6 +35,7 @@ public class PagbasaActivity extends AppCompatActivity {
         bgMusic = MediaPlayer.create(PagbasaActivity.this, R.raw.pagbabasa);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
         a = (ImageButton)findViewById(R.id.a);
         ei = (ImageButton)findViewById(R.id.ei);

@@ -69,6 +69,7 @@ public class hardMatch extends AppCompatActivity {
         bgMusic = MediaPlayer.create(hardMatch.this, R.raw.bgpagtutugma);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
 
 
@@ -94,6 +95,7 @@ public class hardMatch extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 finish();
                 shutdown();
+                countDownTimer.cancel();
             }
         }.start();
 
@@ -103,6 +105,7 @@ public class hardMatch extends AppCompatActivity {
                 Intent intentLoadPlayActivity = new Intent(hardMatch.this, mcLevel.class);
                 startActivity(intentLoadPlayActivity);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                countDownTimer.cancel();
                 finish();
                 shutdown();
 
@@ -703,6 +706,7 @@ public class hardMatch extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             finish();
             shutdown();
+            alertDialog.dismiss();
         });
 
         exit.setOnClickListener(v -> {
@@ -711,6 +715,7 @@ public class hardMatch extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
             finish();
             shutdown();
+            alertDialog.dismiss();
 
         });
     }

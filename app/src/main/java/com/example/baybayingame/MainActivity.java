@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         bgMusic = MediaPlayer.create(MainActivity.this, R.raw.mainbgmusic);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
         playButton = (ImageButton) findViewById(R.id.play);
         historyButtonn = (ImageButton) findViewById(R.id.history);

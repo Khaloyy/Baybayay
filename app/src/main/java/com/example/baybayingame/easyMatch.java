@@ -58,6 +58,7 @@ public class easyMatch extends AppCompatActivity {
         bgMusic = MediaPlayer.create(easyMatch.this, R.raw.bgpagtutugma);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv2 = (ImageView) findViewById(R.id.iv2);
@@ -83,6 +84,7 @@ public class easyMatch extends AppCompatActivity {
                 Intent intentLoadPlayActivity = new Intent(easyMatch.this, mcLevel.class);
                 startActivity(intentLoadPlayActivity);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                countDownTimer.cancel();
                 finish();
                 shutdown();
             }
@@ -103,6 +105,7 @@ public class easyMatch extends AppCompatActivity {
                 startActivity(intentLoadPlayActivity);
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 finish();
+                countDownTimer.cancel();
 
 
             }
@@ -331,6 +334,7 @@ public class easyMatch extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             finish();
             shutdown();
+            alertDialog.dismiss();
         });
 
         exit.setOnClickListener(v -> {
@@ -339,6 +343,7 @@ public class easyMatch extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
             finish();
             shutdown();
+            alertDialog.dismiss();
 
         });
     }

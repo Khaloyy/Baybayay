@@ -3,6 +3,7 @@ package com.example.baybayingame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Editable;
@@ -16,7 +17,6 @@ import android.widget.TextView;
 public class PagsasalinActivity extends AppCompatActivity {
 
     ImageButton backButton;
-    ImageButton toTranslate;
     TextView translated;
     EditText input;
     MediaPlayer bgMusic;
@@ -43,6 +43,7 @@ public class PagsasalinActivity extends AppCompatActivity {
         bgMusic = MediaPlayer.create(PagsasalinActivity.this, R.raw.pagsasalin);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
         backButton = (ImageButton) findViewById(R.id.back);
         input = (EditText) findViewById(R.id.toTranslate);
@@ -66,6 +67,7 @@ public class PagsasalinActivity extends AppCompatActivity {
 
             }
         });
+
 
 
         //to go to play activity

@@ -5,8 +5,8 @@
     >
 
     <RelativeLayout
-        android:layout_width="372dp"
-        android:layout_height="479dp"
+        android:layout_width="371dp"
+        android:layout_height="436dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="@drawable/historybg">
@@ -20,10 +20,9 @@
 
             <VideoView
                 android:id="@+id/videoView"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
 
 
         </FrameLayout>

@@ -42,6 +42,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         bgMusic = MediaPlayer.create(PagsulatAcitivty.this, R.raw.pagsusulat);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
 
         bah = (ImageView)findViewById(R.id.ba);
@@ -108,7 +109,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         lah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ba);
+                Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.la);
                 showVideoPlayerAlertDialog(uri);
 
             }

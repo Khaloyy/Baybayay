@@ -5,6 +5,7 @@ import static android.system.Os.shutdown;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -36,9 +37,11 @@ public class settings extends AppCompatActivity {
 
     SeekBar vol;
 
-
+    private Context mContext = this;
     SharedPreferences.Editor myEditor;
     private boolean run;
+
+
 
 
     @Override
@@ -55,12 +58,15 @@ public class settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+
+
         SharedPreferences sharedPreferences = getSharedPreferences("save", MODE_PRIVATE);
 
         title = (ImageView) findViewById(R.id.sounds);
         bgMusic = MediaPlayer.create(settings.this, R.raw.pagsasalin);
         bgMusic.setLooping(true); //to loop the bg music
         bgMusic.start();//start the bgmusic
+        bgMusic.setVolume(0.3f, 0.3f);
 
 
         sound = findViewById(R.id.switchmute);
@@ -88,12 +94,17 @@ public class settings extends AppCompatActivity {
 
                 //conditions in mute switch
                 if (compoundButton.isChecked()) {
+
                     audioManager.adjustVolume(AudioManager.ADJUST_MUTE, AudioManager.FLAG_SHOW_UI);
                     SharedPreferences.Editor editor = getSharedPreferences("save", MODE_PRIVATE).edit();
                     editor.putBoolean("value", true);
                     editor.putBoolean("able" , false);
+                    editor.putBoolean("isMuted", true); // set the mute boolean to true
+                    editor.commit(); // save the changes
                     editor.apply(); //apply the boolean edited
                     editor.apply(); //apply the boolean edited
+                    editor.commit(); // save the changes
+
 
 
                     seekBar.setEnabled(false); //disable the seekbar

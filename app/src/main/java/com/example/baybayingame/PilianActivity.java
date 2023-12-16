@@ -37,6 +37,7 @@ public class PilianActivity extends AppCompatActivity {
         bgMusic = MediaPlayer.create(PilianActivity.this, R.raw.bgpagtutugma);
         bgMusic.setLooping(true);
         bgMusic.start();
+        bgMusic.setVolume(0.3f, 0.3f);
 
 
 

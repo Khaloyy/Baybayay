@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF9F6"
+    android:background="@drawable/background"
     tools:context=".settings"
     >
 
@@ -14,12 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="216dp"
         android:layout_marginTop="-90dp"
+        android:elevation="10dp"
         android:background="@drawable/roundcorner3" />
 
 
     <ImageButton
         android:id="@+id/back"
         android:layout_width="78dp"
+        android:elevation="10dp"
         android:layout_height="69dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
@@ -30,6 +32,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="84dp"
+        android:elevation="10dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/back"
@@ -40,10 +43,11 @@
     <RelativeLayout
         android:layout_width="346dp"
         android:layout_height="437dp"
+        android:elevation="10dp"
         android:layout_below="@+id/head"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/roundcorner3">
+        android:background="@drawable/roundcorner5">
 
         <ImageView
             android:id="@+id/sounds"
@@ -58,6 +62,7 @@
             android:layout_width="392dp"
             android:layout_height="65dp"
             android:layout_below="@id/sounds"
+            android:elevation="50dp"
             android:layout_weight="1" />
 
         <ImageView
@@ -72,6 +77,7 @@
             android:layout_width="61dp"
             android:layout_height="68dp"
             android:layout_below="@id/seekBar"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/mute" />
 
     </RelativeLayout>
