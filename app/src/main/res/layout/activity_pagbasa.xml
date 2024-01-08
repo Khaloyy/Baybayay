@@ -14,7 +14,7 @@
         android:layout_height="216dp"
         android:elevation="10dp"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/roundcorner3" />
+        android:background="@drawable/roundcorner2" />
     <ImageButton
         android:id="@+id/backbutton"
         android:layout_width="78dp"
@@ -42,7 +42,7 @@
         android:layout_below="@id/head"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="@drawable/roundcorner5"
+        android:background="@drawable/roundcorner2"
         android:elevation="10dp"
         android:padding="10dp"
         android:scrollbars="none">
@@ -59,9 +59,10 @@
             <TextView
                 android:id="@+id/patinigtxt"
                 android:layout_width="300dp"
-
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:background="@drawable/roundcorner2"
+                android:padding="20dp"
                 android:text="@string/patinig"
                 android:textColor="@color/black" />
 
@@ -111,12 +112,13 @@
 
 
             </LinearLayout>
-
             <TextView
                 android:id="@+id/bago"
                 android:layout_width="297dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ll"
+                android:background="@drawable/roundcorner2"
+                android:padding="20dp"
                 android:layout_centerHorizontal="true"
                 android:text="@string/bago"
                 android:textColor="@color/black" />
@@ -131,10 +133,12 @@
 
             <TextView
                 android:id="@+id/paalala"
-                android:layout_width="288dp"
-                android:layout_height="57dp"
+                android:layout_width="296dp"
+                android:layout_height="95dp"
                 android:layout_below="@id/sample"
                 android:layout_centerHorizontal="true"
+                android:background="@drawable/roundcorner2"
+                android:padding="20dp"
                 android:text="@string/paalala"
                 android:textColor="@color/black" />
 

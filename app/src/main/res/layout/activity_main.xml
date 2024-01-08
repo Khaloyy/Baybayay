@@ -80,7 +80,7 @@
             android:background="#00FFFFFF"
             android:onClick="set"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/settingslogo"/>
+            app:srcCompat="@drawable/volume"/>
 
     </LinearLayout>
 </RelativeLayout>

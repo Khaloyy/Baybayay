@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccd2c6"
+    android:background="@drawable/background"
     tools:context=".easyMatch">
 
 
@@ -15,7 +15,7 @@
         android:layout_height="216dp"
         android:elevation="10dp"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/roundcorner3" />
+        android:background="@drawable/roundcorner2" />
 
     <ImageButton
         android:id="@+id/backbutton"
@@ -37,24 +37,24 @@
         android:background="@drawable/madali" />
 
     <RelativeLayout
-        android:layout_width="325dp"
-        android:layout_height="524dp"
+        android:layout_width="359dp"
+        android:layout_height="526dp"
         android:layout_below="@id/head"
-        android:elevation="10dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="@drawable/roundcorner5"
+        android:background="@drawable/roundcorner2"
+        android:elevation="10dp"
         android:padding="20dp">
 
         <TextView
             android:id="@+id/TimeTextView"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="8dp"
             android:layout_toRightOf="@id/textView2"
             android:background="@drawable/roundcorner4"
+            android:elevation="10dp"
             android:padding="10dp"
             android:text="10s"
             android:textAlignment="center"
@@ -65,9 +65,9 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/aclonica"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/aclonica"
             android:padding="10dp"
             android:text="Timer :"
             android:textAlignment="center"

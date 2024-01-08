@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/roundcorner5"
+        android:background="@drawable/roundcorner2"
         android:elevation="10dp" />
 
 
@@ -45,7 +45,7 @@
         android:layout_below="@+id/head"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="@drawable/roundcorner5"
+        android:background="@drawable/roundcorner2"
         android:elevation="10dp">
 
         <ImageView
@@ -54,6 +54,7 @@
             android:layout_height="56dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
+            android:layout_below="@id/sv2"
             android:background="@drawable/laro2"
             android:elevation="10dp"
             android:padding="5dp"
@@ -65,6 +66,7 @@
             android:layout_height="35dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="70dp"
+            android:layout_below="@id/sv2"
             android:background="@drawable/larobaybay"
             android:elevation="10dp"
             android:padding="5dp"
@@ -80,10 +82,10 @@
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginEnd="22dp"
-            android:background="@drawable/roundcorner"
+            android:background="@drawable/roundcorner2"
             android:elevation="10dp"
             android:scrollbarThumbHorizontal="@drawable/custom_scroll_style"
-            android:scrollbars="horizontal">
+            >
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -137,7 +139,6 @@
             android:id="@+id/module"
             android:layout_width="157dp"
             android:layout_height="53dp"
-            android:layout_below="@id/sv"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="9dp"
             android:background="@drawable/modyul2"
@@ -148,7 +149,6 @@
             android:id="@+id/modyulbaybay"
             android:layout_width="122dp"
             android:layout_height="42dp"
-            android:layout_below="@id/sv"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="45dp"
             android:background="@drawable/modyulbaybay"
@@ -167,7 +167,7 @@
             android:layout_marginStart="17dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/roundcorner"
+            android:background="@drawable/roundcorner2"
             android:elevation="10dp"
             android:verticalScrollbarPosition="right">
 

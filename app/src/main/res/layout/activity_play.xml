@@ -4,55 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg5"
-    android:padding="24dp"
     tools:context=".PlayActivity">
 
-    <ImageView
-        android:id="@+id/play"
-        android:layout_width="wrap_content"
-        android:layout_height="132dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/laro2"
-        android:transitionName="transition_laro"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="29dp" />
-
-
-    <ImageButton
-        android:id="@+id/back"
-        android:layout_width="83dp"
-        android:layout_height="136dp"
-        android:background="@drawable/lefty"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="29dp" />
-
-    <ImageButton
-                android:id="@+id/matching"
-                android:layout_width="311dp"
-                android:layout_height="155dp"
-                android:layout_marginTop="22dp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/play"
-                android:background="@drawable/roundcorner"
-                android:padding="20dp"
-                app:srcCompat="@drawable/mc"
-                tools:layout_editor_absoluteX="54dp"
-                tools:layout_editor_absoluteY="137dp" />
-
-    <ImageButton
-        android:id="@+id/quiz"
-        android:layout_width="wrap_content"
-        android:layout_height="175dp"
-        android:layout_below="@id/matching"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/roundcorner"
-        android:padding="20dp"
-        app:srcCompat="@drawable/quizmania"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="137dp" />
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
 
 
 

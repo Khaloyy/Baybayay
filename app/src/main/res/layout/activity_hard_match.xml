@@ -14,7 +14,7 @@
         android:layout_height="216dp"
         android:elevation="10dp"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/roundcorner3" />
+        android:background="@drawable/roundcorner2" />
 
     <ImageButton
         android:id="@+id/back"
@@ -36,23 +36,23 @@
         android:background="@drawable/mahirap" />
 
     <RelativeLayout
-        android:layout_width="357dp"
-        android:layout_height="529dp"
-        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="688dp"
         android:layout_below="@id/head"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="@drawable/roundcorner5"
+        android:background="@drawable/roundcorner2"
+        android:elevation="10dp"
         android:padding="20dp">
 
         <TextView
             android:id="@+id/TimeTextView"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            android:layout_marginTop="10dp"
+
             android:layout_toRightOf="@id/textView2"
             android:background="@drawable/roundcorner4"
+            android:elevation="10dp"
             android:padding="10dp"
             android:text="10s"
             android:textAlignment="center"
@@ -64,9 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
             android:fontFamily="@font/aclonica"
+            android:padding="10dp"
             android:text="Timer :"
             android:textAlignment="center"
             android:textColor="#000000"
@@ -75,8 +74,8 @@
         <include
             android:id="@+id/easy"
             layout="@layout/images"
-            android:layout_width="319dp"
-            android:layout_height="400dp"
+            android:layout_width="367dp"
+            android:layout_height="587dp"
             android:layout_below="@+id/TimeTextView"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp" />

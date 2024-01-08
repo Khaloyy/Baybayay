@@ -656,7 +656,7 @@ public class hardMatch extends AppCompatActivity {
     private void frontOfCardsResources() {
         img101 = R.drawable.ba;
         img102 = R.drawable.da;
-        img103 = R.drawable.ei;
+        img103 = R.drawable.sa;
         img104 = R.drawable.ga;
         img105 = R.drawable.ha;
         img106 = R.drawable.ka;
@@ -664,21 +664,21 @@ public class hardMatch extends AppCompatActivity {
         img108 = R.drawable.ma;
         img109 = R.drawable.na;
         img110 = R.drawable.nga;
-        img111 = R.drawable.ou;
+        img111 = R.drawable.ta;
         img112 = R.drawable.pa;
 
-        img201 = R.drawable.ba;
-        img202 = R.drawable.da;
-        img203 = R.drawable.ei;
-        img204 = R.drawable.ga;
-        img205 = R.drawable.ha;
-        img206 = R.drawable.ka;
-        img207 = R.drawable.la;
-        img208 = R.drawable.ma;
-        img209 = R.drawable.na;
-        img210 = R.drawable.nga;
-        img211 = R.drawable.ou;
-        img212 = R.drawable.pa;
+        img201 = R.drawable.baicon;
+        img202 = R.drawable.daicon;
+        img203 = R.drawable.saicon;
+        img204 = R.drawable.gaicon;
+        img205 = R.drawable.haicon;
+        img206 = R.drawable.kaicon;
+        img207 = R.drawable.laicon;
+        img208 = R.drawable.maicon;
+        img209 = R.drawable.naicon;
+        img210 = R.drawable.ngaicon;
+        img211 = R.drawable.taicon;
+        img212 = R.drawable.paicon;
 
 
     }

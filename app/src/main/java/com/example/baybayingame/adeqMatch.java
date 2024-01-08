@@ -418,12 +418,12 @@ public class adeqMatch extends AppCompatActivity {
         img106 = R.drawable.nga;
 
 
-        img201 = R.drawable.ba;
-        img202 = R.drawable.da;
-        img203 = R.drawable.sa;
-        img204 = R.drawable.la;
-        img205 = R.drawable.ka;
-        img206 = R.drawable.nga;
+        img201 = R.drawable.bha;
+        img202 = R.drawable.dha;
+        img203 = R.drawable.sha;
+        img204 = R.drawable.lha;
+        img205 = R.drawable.kha;
+        img206 = R.drawable.ngha;
 
 
     }

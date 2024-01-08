@@ -13,7 +13,7 @@
         android:layout_height="216dp"
         android:elevation="3dp"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/roundcorner3" />
+        android:background="@drawable/roundcorner2" />
 
     <ImageButton
         android:id="@+id/backbutton"
@@ -36,13 +36,13 @@
 
     <LinearLayout
         android:id="@+id/choices"
-        android:layout_width="315dp"
-        android:layout_height="257dp"
-        android:elevation="20dp"
+        android:layout_width="324dp"
+        android:layout_height="280dp"
         android:layout_below="@id/header"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
-        android:background="@drawable/roundcorner5"
+        android:background="@drawable/roundcorner2"
+        android:elevation="20dp"
         android:orientation="vertical">
 
         <Button
@@ -54,8 +54,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:elevation="50dp"
             android:backgroundTint="#77DD77"
+            android:elevation="50dp"
             android:fontFamily="@font/aclonica"
             android:text="madali"
             android:textColor="@color/black"
@@ -83,8 +83,6 @@
             android:text="mahirap"
             android:textColor="@color/black"
             app:cornerRadius="10dp" />
-
-
 
 
     </LinearLayout>

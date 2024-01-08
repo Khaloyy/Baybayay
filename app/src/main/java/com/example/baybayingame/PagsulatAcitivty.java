@@ -69,6 +69,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         bah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ba);
                 showVideoPlayerAlertDialog(uri);
 
@@ -77,6 +78,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         kah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ka);
                 showVideoPlayerAlertDialog(uri);
 
@@ -85,6 +87,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         dah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.da);
                 showVideoPlayerAlertDialog(uri);
 
@@ -93,6 +96,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         gah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ga);
                 showVideoPlayerAlertDialog(uri);
 
@@ -101,6 +105,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         hah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ha);
                 showVideoPlayerAlertDialog(uri);
 
@@ -109,6 +114,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         lah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.la);
                 showVideoPlayerAlertDialog(uri);
 
@@ -117,6 +123,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         mah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ma);
                 showVideoPlayerAlertDialog(uri);
 
@@ -125,6 +132,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         nah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.na);
                 showVideoPlayerAlertDialog(uri);
 
@@ -133,6 +141,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         ngah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.nga);
                 showVideoPlayerAlertDialog(uri);
 
@@ -141,6 +150,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         pah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pa);
                 showVideoPlayerAlertDialog(uri);
 
@@ -149,6 +159,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         sah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.sa);
                 showVideoPlayerAlertDialog(uri);
 
@@ -157,6 +168,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         tah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ta);
                 showVideoPlayerAlertDialog(uri);
 
@@ -165,6 +177,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         wah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.wa);
                 showVideoPlayerAlertDialog(uri);
 
@@ -173,6 +186,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         yah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ya);
                 showVideoPlayerAlertDialog(uri);
 
@@ -183,6 +197,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         ah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.a);
                 showVideoPlayerAlertDialog(uri);
 
@@ -191,6 +206,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         eh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ei);
                 showVideoPlayerAlertDialog(uri);
 
@@ -200,6 +216,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
         oh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                bgMusic.pause();
                 Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.ou);
                 showVideoPlayerAlertDialog(uri);
 
@@ -262,6 +279,7 @@ public class PagsulatAcitivty extends AppCompatActivity {
 
         go_back.setOnClickListener(v -> {
             alertDialog.dismiss();
+            bgMusic.start();
 
         });
 
